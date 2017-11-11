@@ -1,0 +1,48 @@
+[gd_scene format=1]
+
+[node name="Control" type="Control"]
+
+anchor/right = 1
+anchor/bottom = 1
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 0.0
+margin/bottom = 0.0
+
+[node name="ColorFrame" type="ColorFrame" parent="."]
+
+anchor/right = 1
+anchor/bottom = 1
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 0.0
+margin/bottom = 0.0
+color = Color( 0.90625, 0.0778809, 0.0778809, 1 )
+
+[node name="MenuButton" type="MenuButton" parent="."]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 356.0
+margin/top = 268.0
+margin/right = 697.0
+margin/bottom = 390.0
+toggle_mode = false
+click_on_press = true
+enabled_focus_mode = 0
+shortcut = null
+text = "Play"
+flat = true
+items = [  ]
+
+

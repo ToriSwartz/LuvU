@@ -1,0 +1,70 @@
+[gd_scene load_steps=5 format=1]
+
+[ext_resource path="res://MockUpDesign/data/screens/splash_screen.gd" type="Script" id=1]
+[ext_resource path="res://MockUpDesign/data/screens/main_menu_screen.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Assets/Text/LuvU.png" type="Texture" id=3]
+
+[sub_resource type="Animation" id=1]
+
+resource/name = "fade_in_out"
+length = 7.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:visibility/opacity")
+tracks/0/interp = 1
+tracks/0/imported = false
+tracks/0/keys = {
+"times": FloatArray( 0, 1, 6, 7 ),
+"transitions": FloatArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 0.0, 1.0, 1.0, 0.0 ]
+}
+
+[node name="splash_screen" type="Control"]
+
+visibility/opacity = 0.0
+anchor/right = 1
+anchor/bottom = 1
+focus/ignore_mouse = false
+focus/stop_mouse = false
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 0.0
+margin/bottom = 0.0
+script/script = ExtResource( 1 )
+next_scene = ExtResource( 2 )
+
+[node name="color_frame" type="ColorFrame" parent="."]
+
+anchor/right = 1
+anchor/bottom = 1
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 0.0
+margin/bottom = 0.0
+color = Color( 0.279186, 0.636719, 0.179077, 1 )
+
+[node name="LuvU" type="Sprite" parent="color_frame"]
+
+transform/pos = Vector2( 517.333, 294.273 )
+texture = ExtResource( 3 )
+
+[node name="anim_player" type="AnimationPlayer" parent="."]
+
+playback/process_mode = 1
+playback/default_blend_time = 0.0
+root/root = NodePath("..")
+anims/fade_in_out = SubResource( 1 )
+playback/active = true
+playback/speed = 1.0
+blend_times = [  ]
+autoplay = "fade_in_out"
+
+
