@@ -39,6 +39,10 @@ http://docs.godotengine.org/en/stable/learning/workflow/export/exporting_project
 
 https://godotengine.org/download
 
+## Download and Run ##
+
+To download the game nagivate into the executable folder and download the executable from the correct folder.
+
 #### References: ####
 Chen, Brian X. “What's the Right Age for a Child to Get a Smartphone?” The New York Times, The New York Times, 20 July 2016, www.nytimes.com/2016/07/21/technology/personaltech/whats-the-right-age-to-give-a-child-a-smartphone.html
 “Children, Teens, Media, and Body Image | Common Sense Media.” Common Sense Media: Ratings, reviews, and advice, 21 Jan. 2015, www.commonsensemedia.org/research/children-teens-media-and-body-image.
