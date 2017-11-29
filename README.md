@@ -14,6 +14,15 @@ I want to create an interactive app that allows kids to promote their self-worth
 ## Why not just get a Tamagotchi and call it a day??  ## 
 Well... there are already body images applications out there, but none address the problem at a young age. Some help people who are already suffering from an eating disorder recover and others target older women with hypnosis or inspirational quotes. My application seeks to do more at a younger age to prevent these kids from becoming insecure teens or adults. I want to build an application that allows kids to make meaningful connection with characters in order to teach them to love themselves and their bodies regardless of what the media dictates is beautiful. Not only will this be a free application it will be the only one to promote self-image in a fun, healthy manner for kids middle school and below.
 
+## Future Innovations ##
+
+The current implenantation is just a starting point for this idea. There are still a lot of things that can be improved upon.
+
+- Better graphics
+- Added dialague 
+- Scalability for multiple devices
+- Improved animation sequences
+
 ## How to download Godot ##
 
 https://godotengine.org/
