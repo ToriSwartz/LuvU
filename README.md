@@ -9,7 +9,7 @@ My project will address an often looked over social justice issue of body image.
 I want to create an interactive app that allows kids to promote their self-worth through interaction with relatable characters and gameplay.
 
 ## How is it going to be made??? ##
- With love, sugar, spice and everything nice of course! I will be implementing this as a computer application at first and adapting it to mobile if time allows using the Godot engine which is open source and you can use to make games in C++.
+ With love, sugar, spice and everything nice of course! I will be implementing this as a computer application at first and adapting it to mobile if time allows using the Godot engine. Godot is a open source engine and you can use to make games using gd scripting.
 
 ## Why not just get a Tamagotchi and call it a day??  ## 
 Well... there are already body images applications out there, but none address the problem at a young age. Some help people who are already suffering from an eating disorder recover and others target older women with hypnosis or inspirational quotes. My application seeks to do more at a younger age to prevent these kids from becoming insecure teens or adults. I want to build an application that allows kids to make meaningful connection with characters in order to teach them to love themselves and their bodies regardless of what the media dictates is beautiful. Not only will this be a free application it will be the only one to promote self-image in a fun, healthy manner for kids middle school and below.
