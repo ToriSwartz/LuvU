@@ -41,7 +41,14 @@ https://godotengine.org/download
 
 ## Download and Run ##
 
-To download the game nagivate into the executable folder and download the executable from the correct folder.
+To download the game nagivate into the executable folder and download the executable with the correct operating system in front of the zip file.
+
+#### For Mac ####
+1. Open the downloaded file
+2. A dialog button will open up saying this is not a trusted applicatoin press ok
+3. Go to System Preferences -> Security
+4. Click allow to open anyway
+5. Run the downloaded file again
 
 #### References: ####
 Chen, Brian X. “What's the Right Age for a Child to Get a Smartphone?” The New York Times, The New York Times, 20 July 2016, www.nytimes.com/2016/07/21/technology/personaltech/whats-the-right-age-to-give-a-child-a-smartphone.html
