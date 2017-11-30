@@ -22,6 +22,7 @@ The current implenantation is just a starting point for this idea. There are sti
 - Added dialague 
 - Scalability for multiple devices
 - Improved animation sequences
+- Game music
 
 ## How to download Godot ##
 
