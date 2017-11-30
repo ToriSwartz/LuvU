@@ -1,0 +1,279 @@
+[gd_scene load_steps=34 format=1]
+
+[ext_resource path="res://Scences/Scene1.gd" type="Script" id=1]
+[ext_resource path="res://Textures/background.png" type="Texture" id=2]
+[ext_resource path="res://Animations/fluffle.png" type="Texture" id=3]
+[ext_resource path="res://Animations/idle1.png" type="Texture" id=4]
+[ext_resource path="res://Animations/sleep0.png" type="Texture" id=5]
+[ext_resource path="res://Animations/sleep1.png" type="Texture" id=6]
+[ext_resource path="res://Animations/sleep2.png" type="Texture" id=7]
+[ext_resource path="res://Animations/sleep3.png" type="Texture" id=8]
+[ext_resource path="res://Animations/eat0.png" type="Texture" id=9]
+[ext_resource path="res://Animations/eat1.png" type="Texture" id=10]
+[ext_resource path="res://Animations/eat2.png" type="Texture" id=11]
+[ext_resource path="res://Animations/eat3.png" type="Texture" id=12]
+[ext_resource path="res://Animations/eat4.png" type="Texture" id=13]
+[ext_resource path="res://Animations/eat5.png" type="Texture" id=14]
+[ext_resource path="res://Animations/tablet0.png" type="Texture" id=15]
+[ext_resource path="res://Animations/tablet1.png" type="Texture" id=16]
+[ext_resource path="res://Animations/tablet2.png" type="Texture" id=17]
+[ext_resource path="res://Animations/tablet3.png" type="Texture" id=18]
+[ext_resource path="res://Animations/madFluffle.png" type="Texture" id=19]
+[ext_resource path="res://Textures/hungerIcon.png" type="Texture" id=20]
+[ext_resource path="res://Textures/hungerIconPressed.png" type="Texture" id=21]
+[ext_resource path="res://Textures/tabletIcon.png" type="Texture" id=22]
+[ext_resource path="res://Textures/tabletIconPressed.png" type="Texture" id=23]
+[ext_resource path="res://Textures/sleepingIcon.png" type="Texture" id=24]
+[ext_resource path="res://Textures/sleepingIconPressed.png" type="Texture" id=25]
+[ext_resource path="res://Textures/schoolIcon.png" type="Texture" id=26]
+[ext_resource path="res://Textures/schoolIconPresseed.png" type="Texture" id=27]
+[ext_resource path="res://Scences/happyBar.tscn" type="PackedScene" id=28]
+[ext_resource path="res://Textures/happyIcon.png" type="Texture" id=29]
+[ext_resource path="res://Textures/apple.png" type="Texture" id=30]
+[ext_resource path="res://Textures/energy.png" type="Texture" id=31]
+[ext_resource path="res://Scences/SchoolEvent.tscn" type="PackedScene" id=32]
+
+[sub_resource type="SpriteFrames" id=1]
+
+animations = [ {
+"frames": [ ExtResource( 3 ), ExtResource( 4 ) ],
+"loop": true,
+"name": "default",
+"speed": 2.0
+}, {
+"frames": [ ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 7 ), ExtResource( 6 ), ExtResource( 5 ) ],
+"loop": false,
+"name": "sleeping",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 9 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 13 ), ExtResource( 14 ) ],
+"loop": false,
+"name": "eating",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 16 ), ExtResource( 4 ) ],
+"loop": false,
+"name": "tablet",
+"speed": 2.0
+}, {
+"frames": [ ExtResource( 3 ), ExtResource( 19 ) ],
+"loop": true,
+"name": "mad",
+"speed": 2.0
+} ]
+
+[node name="Root" type="Control"]
+
+anchor/right = 1
+anchor/bottom = 1
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 0.0
+margin/bottom = 0.0
+script/script = ExtResource( 1 )
+max_happy = 100
+happy = 50
+max_hunger = 100
+hunger = 50
+max_energy = 100
+energy = 50
+
+[node name="background" type="TextureFrame" parent="."]
+
+anchor/right = 1
+anchor/bottom = 1
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 0.0
+margin/bottom = 0.0
+texture = ExtResource( 2 )
+expand = true
+stretch_mode = 0
+
+[node name="Node2D" type="Node2D" parent="."]
+
+z/relative = false
+
+[node name="Fluffle" type="AnimatedSprite" parent="Node2D"]
+
+transform/pos = Vector2( 505.14, 364.539 )
+transform/scale = Vector2( 7, 7 )
+frames = SubResource( 1 )
+animation = "default"
+frame = 1
+playing = true
+
+[node name="BottomMenu" type="HBoxContainer" parent="."]
+
+anchor/right = 1
+anchor/bottom = 1
+focus/ignore_mouse = false
+focus/stop_mouse = false
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 480.0
+margin/right = 0.0
+margin/bottom = 0.0
+alignment = 1
+
+[node name="Feed" type="TextureButton" parent="BottomMenu"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 326.0
+margin/top = 0.0
+margin/right = 416.0
+margin/bottom = 120.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+textures/normal = ExtResource( 20 )
+textures/disabled = ExtResource( 21 )
+params/resize_mode = 0
+params/scale = Vector2( 3, 3 )
+params/stretch_mode = 0
+
+[node name="Tablet" type="TextureButton" parent="BottomMenu"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 420.0
+margin/top = 0.0
+margin/right = 510.0
+margin/bottom = 120.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+textures/normal = ExtResource( 22 )
+textures/disabled = ExtResource( 23 )
+params/resize_mode = 0
+params/scale = Vector2( 3, 3 )
+params/stretch_mode = 0
+
+[node name="Sleep" type="TextureButton" parent="BottomMenu"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 514.0
+margin/top = 0.0
+margin/right = 604.0
+margin/bottom = 120.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+textures/normal = ExtResource( 24 )
+textures/disabled = ExtResource( 25 )
+params/resize_mode = 0
+params/scale = Vector2( 3, 3 )
+params/stretch_mode = 0
+
+[node name="School" type="TextureButton" parent="BottomMenu"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 608.0
+margin/top = 0.0
+margin/right = 698.0
+margin/bottom = 120.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+textures/normal = ExtResource( 26 )
+textures/disabled = ExtResource( 27 )
+params/resize_mode = 0
+params/scale = Vector2( 3, 3 )
+params/stretch_mode = 0
+
+[node name="bars" type="VBoxContainer" parent="."]
+
+focus/ignore_mouse = false
+focus/stop_mouse = false
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 34.0
+margin/top = 41.0
+margin/right = 206.0
+margin/bottom = 269.0
+alignment = 0
+
+[node name="happybar" parent="bars" instance=ExtResource( 28 )]
+
+transform/pos = Vector2( 7.51834, -3.15228 )
+
+[node name="Heart" type="TextureFrame" parent="bars/happybar"]
+
+rect/scale = Vector2( 3.5, 3.5 )
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 209.0
+margin/top = 11.0
+margin/right = 219.0
+margin/bottom = 21.0
+texture = ExtResource( 29 )
+expand = true
+stretch_mode = 0
+
+[node name="hungerbar" parent="bars" instance=ExtResource( 28 )]
+
+transform/pos = Vector2( 8.16223, 51.6941 )
+
+[node name="Apple" type="TextureFrame" parent="bars/hungerbar"]
+
+rect/scale = Vector2( 4, 4 )
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 211.0
+margin/top = 7.0
+margin/right = 223.0
+margin/bottom = 21.0
+texture = ExtResource( 30 )
+stretch_mode = 0
+
+[node name="energybar" parent="bars" instance=ExtResource( 28 )]
+
+transform/pos = Vector2( 9.52261, 108.83 )
+
+[node name="Battery" type="TextureFrame" parent="bars/energybar"]
+
+rect/scale = Vector2( 4, 4 )
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 209.0
+margin/top = 16.0
+margin/right = 221.0
+margin/bottom = 30.0
+texture = ExtResource( 31 )
+stretch_mode = 0
+
+[node name="SchoolEvent" parent="." instance=ExtResource( 32 )]
+
+visibility/visible = false
+margin/left = 162.0
+margin/top = 64.0
+margin/right = 202.0
+margin/bottom = 104.0
+
+

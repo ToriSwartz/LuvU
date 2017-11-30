@@ -1,0 +1,49 @@
+{  
+   "title":"SchoolBullies",
+   "updated_at":"2017-11-29T00:00:00Z",
+   "created_at":"2017-11-30T02:10:49Z",
+   "url_key":"j4d8",
+   "data":{  
+      "optionMirroring":true,
+      "initial":"theFlufflesAtSch",
+      "editorData":{  
+         "authorName":"Victoria Swartz",
+         "textSize":0,
+         "libraryVisible":false,
+         "playPoint":"theFlufflesAtSch"
+      },
+      "allowCheckpoints":false,
+      "stitches":{  
+         "theFlufflesAtSch":{  
+            "content":[  
+               "The Fluffle's at school were mean today. They told me I looked fat! What should I do?",
+               {  
+                  "linkPath":"goodChoiceEveryo",
+                  "ifConditions":null,
+                  "option":"You are perfect just the way you are",
+                  "notIfConditions":null
+               },
+               {  
+                  "linkPath":"everyoneLooksDif",
+                  "ifConditions":null,
+                  "option":"You should go on a diet",
+                  "notIfConditions":null
+               },
+               {  
+                  "pageNum":1
+               }
+            ]
+         },
+         "everyoneLooksDif":{  
+            "content":[  
+               "Everyone looks different and that is ok. You do not need to change your eating habits to change the way you look. Your Fluffle is upset."
+            ]
+         },
+         "goodChoiceEveryo":{  
+            "content":[  
+               "Good choice! Everyone looks different and that is ok. Your Fluffle is happy you accept it!"
+            ]
+         }
+      }
+   }
+}
